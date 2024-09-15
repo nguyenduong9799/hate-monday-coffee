@@ -4,7 +4,8 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: ['Space Grotesk', 'sans-serif']
+				sans: ['Space Grotesk', 'sans-serif'],
+				mono: ['Space Mono', 'mono']
 			}
 		}
 	},

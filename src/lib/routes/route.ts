@@ -1,4 +1,4 @@
 export const APP_ROUTES = {
     home: '/',
-    coming_soon: '/commingsoon'
+    coming_soon: '/comingsoon'
 };
