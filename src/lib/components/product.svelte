@@ -2,7 +2,7 @@
 	import { Product1 } from '$lib/images';
 </script>
 
-<div class="flex flex-col rounded-xl w-72 h-[491] gap-2">
+<div class="flex flex-col rounded-xl w-72 gap-2">
 	<figure class="bg-base-200 rounded-xl flex flex-col items-end">
 		<img src={Product1} alt="Shoes" />
 		<div class="badge mb-2 mr-2 px-3 py-1">Light roast</div>
