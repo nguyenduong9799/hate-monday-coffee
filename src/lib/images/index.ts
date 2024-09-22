@@ -9,4 +9,4 @@ export { default as FarmImage } from './farm.png';
 export { default as PreProcessImage } from './pre-process.png';
 export { default as RoastedImage } from './roasted.png';
 export { default as ProductionImage } from './Production.png';
-export { default as ZaloIcon } from './zalo.svg?raw';
+export { default as ZaloIcon } from './Zalo.svg?raw';
