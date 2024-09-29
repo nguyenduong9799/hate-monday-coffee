@@ -10,3 +10,8 @@ export { default as PreProcessImage } from './pre-process.png';
 export { default as RoastedImage } from './roasted.png';
 export { default as ProductionImage } from './Production.png';
 export { default as ZaloIcon } from './Zalo.svg?raw';
+export { default as Slide1 } from './carousel/slide1.png';
+export { default as Slide2 } from './carousel/slide2.png';
+export { default as Slide3 } from './carousel/slide3.png';
+export { default as Slide4 } from './carousel/slide4.png';
+export { default as About } from './about.png';

@@ -47,11 +47,10 @@
 			<span>©2024 Hate Monday Coffee Roasters by C5COFFEE</span>
 		</aside>
 		<nav>
-			<div class="grid grid-flow-col gap-4">
-				<a class="flex flex-col items-center">
-					{@html ZaloIcon}
-					Zalo
-				</a>
+			<div class="flex flex-row gap-20 items-center w-full">
+				<a class="flex flex-col w-8 items-center">Zalo </a>
+				<a class="flex flex-col w-8 items-center">Instagram </a>
+				<a class="flex flex-col w-8 items-center">Facebook </a>
 			</div>
 			<p>
 				Xưởng rang

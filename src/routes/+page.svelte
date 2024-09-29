@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
-	import { FirstHero, Instruction, SecondHero, Services } from '$lib';
+	import { About, Carousel, FirstHero, Instruction, SecondHero, Services } from '$lib';
 	import Product from '$lib/components/product.svelte';
 	import { Hero, Logo, Stamp } from '$lib/images';
 	import { APP_ROUTES } from '$lib/routes/route';
@@ -27,4 +27,6 @@
 	<SecondHero />
 	<Services />
 	<Instruction />
+	<Carousel />
+	<About />
 </div>
