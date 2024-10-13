@@ -2,18 +2,18 @@
 	import { SecondHero } from '$lib/images';
 </script>
 
-<div class="hero min-h-screen" style="background-image: url({SecondHero});">
+<div class="min-h-screen hero" style="background-image: url({SecondHero});">
 	<div
-		class="hero-content -ml-72 text-neutral-50 text-left flex-col lg:flex-row justify-start items-center w-full"
+		class="flex-col items-center justify-start w-full text-left hero-content text-neutral-50 lg:flex-row"
 	>
 		<div class="max-w-3xl mt-64">
-			<div class="mb-5 text-display-l font-sans">
+			<div class="mb-5 font-sans text-display-l">
 				Điều gì khiến cà phê của chúng tôi trở nên đặc biệt
 			</div>
 		</div>
 	</div>
 </div>
-<p class=" -mt-12 self-center text-neutral-50 font-mono truncate">
+<p class="self-center -mt-12 font-mono truncate text-neutral-50">
 	“Free ship” cho đơn hàng từ 500k. “Free ship” cho đơn hàng từ 500k. “Free ship” cho đơn hàng từ
 	500k. “Free ship” cho đơn hàng từ 500k. “Free ship” cho đơn hàng từ 500k.
 </p>

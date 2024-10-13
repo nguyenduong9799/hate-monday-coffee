@@ -1,12 +1,12 @@
-<div class="flex flex-col justify-start items-start p-12">
-	<div class="text text-display font-sans mb-8">Hướng dẫn mua hàng</div>
+<div class="flex flex-col items-start justify-start p-12">
+	<div class="mb-8 font-sans text text-display">Hướng dẫn mua hàng</div>
 	<div class="collapse collapse-plus">
 		<input type="radio" name="my-accordion-3" checked={true} />
-		<h1 class="collapse-title text-h1 font-sans font-medium">
+		<h1 class="font-sans font-medium collapse-title text-h1">
 			01 Truy cập website và lựa chọn các sản phẩm
 		</h1>
 		<div class="collapse-content">
-			<p class="text text-lg">
+			<p class="text-lg text">
 				This coffee was grown by El Porvenir Cooperative on the steep slopes surrounding Laguna de
 				Ayarza in the Santa Rosa Department of southeastern Guatemala. Famous for its natural
 				beauty, Laguna de Ayarza is a high elevation double caldera. Approximately 20,000 years ago,
@@ -17,13 +17,13 @@
 				is famous for being sweet and dense.
 			</p>
 		</div>
-		<div class="divider divider-neutral h-0"></div>
+		<div class="h-0 divider divider-neutral"></div>
 	</div>
 	<div class="collapse collapse-plus">
 		<input type="radio" name="my-accordion-3" />
-		<h1 class="collapse-title text-h1 font-sans font-medium">02 Nhập thông tin đặt hàng</h1>
+		<h1 class="font-sans font-medium collapse-title text-h1">02 Nhập thông tin đặt hàng</h1>
 		<div class="collapse-content">
-			<p class="text text-lg">
+			<p class="text-lg text">
 				This coffee was grown by El Porvenir Cooperative on the steep slopes surrounding Laguna de
 				Ayarza in the Santa Rosa Department of southeastern Guatemala. Famous for its natural
 				beauty, Laguna de Ayarza is a high elevation double caldera. Approximately 20,000 years ago,
@@ -34,15 +34,15 @@
 				is famous for being sweet and dense.
 			</p>
 		</div>
-		<div class="divider divider-neutral h-0"></div>
+		<div class="h-0 divider divider-neutral"></div>
 	</div>
 	<div class="collapse collapse-plus">
 		<input type="radio" name="my-accordion-3" />
-		<div class="collapse-title text-h1 font-sans font-medium">
+		<div class="font-sans font-medium collapse-title text-h1">
 			03 “Hate Monday” xác nhận và giao hàng
 		</div>
 		<div class="collapse-content">
-			<p class="text text-lg">
+			<p class="text-lg text">
 				This coffee was grown by El Porvenir Cooperative on the steep slopes surrounding Laguna de
 				Ayarza in the Santa Rosa Department of southeastern Guatemala. Famous for its natural
 				beauty, Laguna de Ayarza is a high elevation double caldera. Approximately 20,000 years ago,
@@ -53,6 +53,6 @@
 				is famous for being sweet and dense.
 			</p>
 		</div>
-		<div class="divider divider-neutral h-0"></div>
+		<div class="h-0 divider divider-neutral"></div>
 	</div>
 </div>

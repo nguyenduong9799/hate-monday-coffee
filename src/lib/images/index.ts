@@ -15,3 +15,4 @@ export { default as Slide2 } from './carousel/slide2.png';
 export { default as Slide3 } from './carousel/slide3.png';
 export { default as Slide4 } from './carousel/slide4.png';
 export { default as About } from './about.png';
+export { default as IconBack } from './icon-back.svg?raw';

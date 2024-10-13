@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
 	import { About, Carousel, FirstHero, Instruction, SecondHero, Services } from '$lib';
-	import Product from '$lib/components/product.svelte';
+	import Product from '$lib/components/products/product.svelte';
 	import { Hero, Logo, Stamp } from '$lib/images';
 	import { APP_ROUTES } from '$lib/routes/route';
 	import { onMount } from 'svelte';
@@ -11,22 +11,22 @@
 	// })
 </script>
 
-<div class="w-full flex flex-col">
+<div class="flex flex-col">
 	<FirstHero />
-	<div class="w-full flex flex-row px-12 py-32 gap-12">
-		<div class="flex-1 flex flex-col justify-start">
+	<div class="flex flex-row w-full gap-12 px-12 py-32">
+		<div class="flex flex-col justify-start w-80">
 			<div class="font-sans text-display">Được mua nhiều nhất</div>
-			<button class="h-8 w-fit btn btn-neutral rounded-none">[Xem tất cả]</button>
+			<button
+				on:click={() => goto(APP_ROUTES.products)}
+				class="h-8 rounded-none w-fit btn btn-neutral">[Xem tất cả]</button
+			>
 		</div>
-		<div class="flex-auto flex flex-wrap gap-12">
-			<Product></Product>
-			<Product></Product>
-			<Product></Product>
-		</div>
+		<Product></Product>
+		<Product></Product>
+		<Product></Product>
 	</div>
 	<SecondHero />
 	<Services />
 	<Instruction />
 	<Carousel />
-	<About />
 </div>

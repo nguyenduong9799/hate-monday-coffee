@@ -18,10 +18,6 @@ export default {
 				mono: ['Space Mono', 'mono']
 			}
 		},
-		fontFamily: {
-			sans: ['ui-sans-serif', 'system-ui'],
-			mono: ['ui-monospace', 'Space Mono']
-		},
 		fontWeight: {
 			thin: '100',
 			extralight: '200',
