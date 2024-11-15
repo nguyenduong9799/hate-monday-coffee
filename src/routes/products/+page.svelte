@@ -1,6 +1,12 @@
-<script>
+<script lang="ts">
+	import { page } from '$app/stores';
 	import { Filter, ProductCard } from '$lib';
-	let numbers = Array.from({ length: 21 }, (_, i) => i + 1);
+	import type { Product } from '$lib/components/models/menu.model';
+
+	import menuStore from '$lib/stores/menu.store';
+	let products: Product[] = [];
+
+	$: menuStore.subscribe((value) => (products = value.products));
 </script>
 
 <div class="flex flex-col w-full gap-8 p-12 bg-base-100">
@@ -12,8 +18,8 @@
 	</p>
 	<Filter />
 	<div class="grid items-center justify-center grid-cols-4 gap-x-6 gap-y-12">
-		{#each numbers as number}
-			<ProductCard />
+		{#each products as product}
+			<ProductCard {product} />
 		{/each}
 	</div>
 	<button class="self-end h-8 rounded-none w-fit btn text-neutral-50 btn-neutral text"

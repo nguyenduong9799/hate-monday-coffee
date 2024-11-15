@@ -5,7 +5,18 @@
 
 	import '../app.css';
 	import { page } from '$app/stores';
+	import CartModal from '$lib/components/cart/cart-modal.svelte';
 
+	import cartStore from '$lib/stores/cart.store';
+	import type { Cart } from '$lib/components/models/cart.model';
+	import { onMount } from 'svelte';
+	import { fetchMenuData } from '$lib/stores/menu.store';
+	onMount(() => {
+		fetchMenuData();
+	});
+	let cart: Cart;
+
+	$: cartStore.subscribe((value) => (cart = value));
 	$: currentPath = $page.url.pathname;
 </script>
 
@@ -24,29 +35,16 @@
 						href={APP_ROUTES.products}>Sản phẩm</a
 					>
 				</li>
-				<li><a class="text-lg text" href={APP_ROUTES.coming_soon}>Về chúng tôi</a></li>
+				<li>
+					<a
+						class="text-lg text {currentPath === APP_ROUTES.coming_soon
+							? 'bg-neutral rounded-none text-neutral-content'
+							: ''}"
+						href={APP_ROUTES.coming_soon}>Về chúng tôi</a
+					>
+				</li>
 			</ul>
-			<div class="dropdown dropdown-end">
-				<div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-					<div class="flex flex-row items-center justify-between gap-4">
-						{@html CartIcon}
-						<!-- <span class="badge badge-sm indicator-item">8</span> -->
-						<span>[{0}]</span>
-					</div>
-				</div>
-				<div
-					tabindex="0"
-					class="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow"
-				>
-					<div class="card-body">
-						<span class="text-lg font-bold">8 Items</span>
-						<span class="text-info">Subtotal: $999</span>
-						<div class="card-actions">
-							<button class="btn btn-primary btn-block">View cart</button>
-						</div>
-					</div>
-				</div>
-			</div>
+			<CartModal />
 		</div>
 	</div>
 	<slot />

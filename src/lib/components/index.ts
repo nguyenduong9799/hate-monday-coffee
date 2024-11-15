@@ -6,4 +6,5 @@ export { default as Instruction } from './home/instruction.svelte';
 export { default as Carousel } from './home/carousel.svelte';
 export { default as About } from './home/about.svelte';
 export { default as Filter } from './products/filters.svelte';
-
+export { default as CartModal } from './cart/cart-modal.svelte';
+export { default as CartItem } from './cart/cart-item.svelte';
