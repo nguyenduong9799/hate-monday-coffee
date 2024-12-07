@@ -1,8 +1,8 @@
-<div class="flex flex-col items-start justify-start p-12">
-	<div class="mb-8 font-sans text text-display">Hướng dẫn mua hàng</div>
+<div class="flex flex-col items-center justify-start w-full p-4 lg:p-12">
+	<div class="w-full mb-8 font-sans text-h1 text lg:text-display">Hướng dẫn mua hàng</div>
 	<div class="collapse collapse-plus">
 		<input type="radio" name="my-accordion-3" checked={true} />
-		<h1 class="font-sans font-medium collapse-title text-h1">
+		<h1 class="font-sans font-medium collapse-title text-h3 lg:text-h1">
 			01 Truy cập website và lựa chọn các sản phẩm
 		</h1>
 		<div class="collapse-content">
@@ -21,7 +21,9 @@
 	</div>
 	<div class="collapse collapse-plus">
 		<input type="radio" name="my-accordion-3" />
-		<h1 class="font-sans font-medium collapse-title text-h1">02 Nhập thông tin đặt hàng</h1>
+		<h1 class="font-sans font-medium collapse-title text-h3 lg:text-h1">
+			02 Nhập thông tin đặt hàng
+		</h1>
 		<div class="collapse-content">
 			<p class="text-lg text">
 				This coffee was grown by El Porvenir Cooperative on the steep slopes surrounding Laguna de
@@ -38,7 +40,7 @@
 	</div>
 	<div class="collapse collapse-plus">
 		<input type="radio" name="my-accordion-3" />
-		<div class="font-sans font-medium collapse-title text-h1">
+		<div class="font-sans font-medium collapse-title text-h3 lg:text-h1">
 			03 “Hate Monday” xác nhận và giao hàng
 		</div>
 		<div class="collapse-content">

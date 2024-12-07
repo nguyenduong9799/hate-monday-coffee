@@ -2,7 +2,10 @@
 	import { Hero, Stamp } from '$lib/images';
 </script>
 
-<div class="min-h-screen p-12 hero" style="background-image: url({Hero});">
+<div
+	class="object-contain min-h-screen p-4 lg:p-12 min-w-screen hero"
+	style="background-image: url({Hero});"
+>
 	<div
 		class="flex-col items-end justify-start w-full h-full text-left hero-content text-neutral-50 lg:flex-row"
 	>

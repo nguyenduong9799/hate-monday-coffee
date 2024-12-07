@@ -2,15 +2,15 @@
 	import { FarmImage, PreProcessImage, ProductionImage, RoastedImage } from '$lib/images';
 </script>
 
-<div class="px-32 py-32">
-	<div class="px-12 text-lg font-normal text-center text">
+<div class="w-full px-0 py-4 lg:py-32 lg:px-32">
+	<div class="px-4 text-lg font-normal text-center lg:px-12 text">
 		Năm 2021, trên một căn gác nhỏ bé ngập tràn hương thơm cà phê, những hạt cà phê đầu tiên của
 		“Hate Monday” đã được thử nghiệm. Với chúng tôi, cà phê không chỉ là thức uống mà còn là một
 		phần của nền văn hóa. Chúng tôi mong muốn tạo ra những tách cà phê giàu hương vị, độc đáo và góp
 		phần xây dựng giá trị cộng đồng, kết nối những người yêu cà phê lại với nhau.
 	</div>
-	<div class="flex flex-row items-center gap-12 px-12">
-		<img class="flex-1" src={FarmImage} alt="Farm" />
+	<div class="flex flex-col items-center gap-12 px-4 lg:flex-row lg:px-12">
+		<img src={FarmImage} alt="Farm" />
 		<div class="flex flex-col flex-1">
 			<span class="mb-8 font-sans text text-display">Nông trại</span>
 			<span class="max-w-md text">
@@ -19,7 +19,7 @@
 			</span>
 		</div>
 	</div>
-	<div class="flex flex-row items-center gap-12 px-12">
+	<div class="flex flex-col-reverse items-center gap-12 px-4 lg:px-12 lg:flex-row">
 		<div class="flex flex-col flex-1">
 			<span class="mb-8 font-sans text text-display">Sơ chế</span>
 			<span class="max-w-md text">
@@ -29,7 +29,7 @@
 		</div>
 		<img class="flex-1" src={PreProcessImage} alt="PreProcess" />
 	</div>
-	<div class="flex flex-row items-center gap-12 px-12">
+	<div class="flex flex-col items-center gap-12 px-4 lg:px-12 lg:flex-row">
 		<img class="flex-1" src={RoastedImage} alt="Farm" />
 		<div class="flex flex-col flex-1">
 			<span class="mb-8 font-sans text text-display">Rang xay</span>
@@ -39,7 +39,9 @@
 			</span>
 		</div>
 	</div>
-	<div class="flex flex-row items-center gap-12 px-12 bg-neutral-100 rounded-2xl">
+	<div
+		class="flex flex-col-reverse items-center gap-12 p-4 lg:flex-row lg:px-12 bg-neutral-100 rounded-2xl"
+	>
 		<div class="flex flex-col flex-1 gap-8">
 			<span class="font-sans text text-display">Thành phẩm</span>
 			<span class="max-w-md text">

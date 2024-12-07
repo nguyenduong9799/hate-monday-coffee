@@ -20,13 +20,64 @@
 	$: currentPath = $page.url.pathname;
 </script>
 
-<div class="w-screen">
-	<div class="h-32 p-12 navbar bg-base-100">
-		<a href={APP_ROUTES.home} class="flex-1">
-			{@html Logo}
-		</a>
-		<div class="flex-none gap-40">
-			<ul class="px-1 menu menu-horizontal">
+<div class="w-full overflow-x-hidden">
+	<div class="bg-[#9AB676] w-full p-3 h-10">
+		<p class="self-center font-mono text-base truncate text-neutral-50">
+			“Free ship” cho đơn hàng từ 500k. “Free ship” cho đơn hàng từ 500k. “Free ship” cho đơn hàng
+			từ 500k. “Free ship” cho đơn hàng từ 500k. “Free ship” cho đơn hàng từ 500k.
+		</p>
+	</div>
+	<div class="drawer">
+		<input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
+		<div class="flex flex-col drawer-content">
+			<div class="h-24 p-4 lg:p-12 navbar bg-base-100">
+				<a href={APP_ROUTES.home}>
+					{@html Logo}
+				</a>
+				<div class="flex-auto"></div>
+				<div class="flex-none hidden lg:block">
+					<ul class="px-1 menu menu-horizontal">
+						<li>
+							<a
+								class="text-lg text {currentPath === APP_ROUTES.products
+									? 'bg-neutral rounded-none text-neutral-content'
+									: ''}"
+								href={APP_ROUTES.products}>Sản phẩm</a
+							>
+						</li>
+						<li>
+							<a
+								class="text-lg text {currentPath === APP_ROUTES.coming_soon
+									? 'bg-neutral rounded-none text-neutral-content'
+									: ''}"
+								href={APP_ROUTES.coming_soon}>Về chúng tôi</a
+							>
+						</li>
+					</ul>
+				</div>
+				<CartModal />
+				<div class="flex-none lg:hidden">
+					<label for="my-drawer-3" aria-label="open sidebar" class="btn btn-square btn-ghost">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							class="inline-block w-6 h-6 stroke-current"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M4 6h16M4 12h16M4 18h16"
+							></path>
+						</svg>
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="drawer-side">
+			<label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label>
+			<ul class="min-h-full p-4 menu bg-base-200 w-80">
 				<li>
 					<a
 						class="text-lg text {currentPath === APP_ROUTES.products
@@ -44,7 +95,6 @@
 					>
 				</li>
 			</ul>
-			<CartModal />
 		</div>
 	</div>
 	<slot />

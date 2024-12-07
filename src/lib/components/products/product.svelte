@@ -6,7 +6,7 @@
 
 <a
 	href={`${APP_ROUTES.products}/${product.menuProductId}`}
-	class="flex flex-col gap-2 max-w-72 rounded-xl"
+	class="flex flex-col w-full gap-2 lg:max-w-72 rounded-xl"
 >
 	<figure class="flex flex-col items-end bg-base-200 rounded-xl">
 		<img src={product.picUrl} alt="Shoes" />

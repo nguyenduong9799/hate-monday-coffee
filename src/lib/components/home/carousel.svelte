@@ -2,29 +2,29 @@
 	import { Slide1, Slide2, Slide3, Slide4 } from '$lib/images';
 </script>
 
-<div class="carousel carousel-center rounded-box w-full space-x-10 p-4 my-32">
+<div class="w-full p-4 my-32 space-x-10 carousel carousel-center rounded-box">
 	<div class="carousel-item">
-		<img src={Slide1} class="rounded-box mb-12" />
+		<img src={Slide1} class="mb-12 rounded-box" />
 	</div>
 	<div class="carousel-item">
-		<img src={Slide2} class="rounded-box mt-12" />
+		<img src={Slide2} class="mt-12 rounded-box" />
 	</div>
 	<div class="carousel-item">
-		<img src={Slide3} class="rounded-box aspect-square mb-12" />
+		<img src={Slide3} class="mb-12 rounded-box aspect-square" />
 	</div>
 	<div class="carousel-item">
-		<img src={Slide4} class="rounded-box mt-12" />
+		<img src={Slide4} class="mt-12 rounded-box" />
 	</div>
 	<div class="carousel-item">
-		<img src={Slide1} class="rounded-box mb-12" />
+		<img src={Slide1} class="mb-12 rounded-box" />
 	</div>
 	<div class="carousel-item">
-		<img src={Slide2} class="rounded-box mt-12" />
+		<img src={Slide2} class="mt-12 rounded-box" />
 	</div>
 	<div class="carousel-item">
-		<img src={Slide3} class="rounded-box aspect-square mb-12" />
+		<img src={Slide3} class="mb-12 rounded-box aspect-square" />
 	</div>
 	<div class="carousel-item">
-		<img src={Slide4} class="rounded-box mt-12" />
+		<img src={Slide4} class="mt-12 rounded-box" />
 	</div>
 </div>
