@@ -3,6 +3,8 @@
 	import cartStore, { addToCart, clearCart, removeFromCart } from '../../stores/cart.store';
 	import CartItem from './cart-item.svelte';
 	import { CartIcon, EmptyCart } from '$lib/images';
+	import { goto } from '$app/navigation';
+	import { APP_ROUTES } from '$lib/routes/route';
 
 	let panel: HTMLDialogElement;
 
@@ -39,10 +41,12 @@
 				<div class="w-40">Tổng cộng</div>
 				<span class="text text-h3">{cart.totalAmount} VND</span>
 			</div>
-			<button class="text-white btn btn-primary text">[thanh toán]</button>
+			<button on:click={() => goto(APP_ROUTES.payment)} class="text-white btn btn-primary text"
+				>[thanh toán]</button
+			>
 		{:else}
 			<div class="flex flex-col items-center justify-center w-full h-full gap-4 px-12">
-				<img class="size-96" src={EmptyCart} />
+				<img alt="empty cart" class="size-96" src={EmptyCart} />
 				<div class="text text-h3">Ể, chưa có gì trong giỏ hàng á!!!!</div>
 				<div class="text-center text text-neutral-400">
 					Đừng ngần ngại thử thêm vài loại cà phê mới của chúng mình nhé. Biết đâu bạn sẽ tìm thấy

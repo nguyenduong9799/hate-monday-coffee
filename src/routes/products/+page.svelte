@@ -17,7 +17,7 @@
 		phê Việt Nam của chúng tôi, bao gồm arabica, robusta, hỗn hợp và rang từ trung bình đến đậm.
 	</p>
 	<Filter />
-	<div class="grid items-center justify-center grid-cols-4 gap-x-6 gap-y-12">
+	<div class="grid items-center justify-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-2 lg:gap-x-6 gap-y-12">
 		{#each products as product}
 			<ProductCard {product} />
 		{/each}

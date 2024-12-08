@@ -57,12 +57,12 @@
 	);
 </script>
 
-<div class="px-12 pb-12 bg-base-100">
+<div class=" px-4 lg:px-12 pb-12 bg-base-100">
 	<button on:click={() => history.back()} class="flex btn btn-ghost"
 		>{@html IconBack} Quay lại</button
 	>
 	{#if product}
-		<div class="flex w-full gap-6 p-6">
+		<div class="flex flex-col md:flex-row w-full gap-6 p-2 lg:p-6">
 			<figure
 				class="flex flex-col content-center justify-center flex-1 aspect-square bg-base-200 rounded-xl"
 			>
@@ -73,7 +73,7 @@
 					<button class="btn btn-outline rounded-2xl">{'>'}</button>
 				</div>
 			</figure>
-			<div class="flex flex-col flex-1 gap-4">
+			<div class="flex flex-col flex-1 gap-4 grow">
 				<p class="text text-primary">Guatemala</p>
 				<p class="font-sans font-medium text text-display">{product.name}</p>
 				<div class="flex flex-row items-center gap-6">
@@ -93,7 +93,7 @@
 				<p class="font-sans font-light text">
 					{product.description}
 				</p>
-				<p class="font-semibold tex-lg text">Thêm tuỳ chọn</p>
+				<p class="font-semibold text-lg text">Thêm tuỳ chọn</p>
 				<select class="w-full max-w-lg text-gray-400 select bg-base-200">
 					<option disabled selected>Chọn cỡ xay</option>
 					<option>Han Solo</option>
@@ -104,8 +104,10 @@
 					<option>Han Solo</option>
 					<option>Greedo</option>
 				</select>
-				<div class="flex flex-row items-center w-full max-w-lg gap-4">
-					<div class="border-[1px] gap-8 rounded-xl flex flex-row items-center justify-between">
+				<div class="flex flex-col lg:flex-row items-center w-full max-w-lg  gap-4">
+					<div
+						class="border-[1px] gap-8 rounded-xl flex flex-row items-center justify-between  w-full lg:max-w-sm"
+					>
 						<button on:click={decreaseQuantity} class=" btn btn-ghost"
 							><span class="text-h3 text">-</span></button
 						>
@@ -114,7 +116,7 @@
 							><span class="text-h3 text">+</span></button
 						>
 					</div>
-					<button on:click={handleAddToCart} class="text-white rounded-xl grow btn btn-primary"
+					<button on:click={handleAddToCart} class="text-white  rounded-xl btn btn-primary w-full lg:max-w-xs"
 						>[thêm vào giỏ hàng]</button
 					>
 				</div>
